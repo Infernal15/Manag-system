@@ -8,9 +8,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="386" Width="813" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid Background="White" VerticalAlignment="Top" Margin="0" Height="356">
-        <Button x:Name="work" Content="Добавити нові роботи" HorizontalAlignment="Left" Margin="360,152,0,0" VerticalAlignment="Top" Width="145" Height="40" Click="work_Click"/>
-        <Button x:Name="exit" Content="Вихід" HorizontalAlignment="Left" Margin="370,282,0,0" VerticalAlignment="Top" Width="125" Height="40" Click="exit_Click"/>
-        <Button x:Name="rah" Content="Створити рахунок" HorizontalAlignment="Left" Margin="360,52,0,0" VerticalAlignment="Top" Width="145" Height="40" Click="Button_Click"/>
+        <Button x:Name="work" Content="Добавити нові роботи" HorizontalAlignment="Left" Margin="330,141,0,0" VerticalAlignment="Top" Width="145" Height="40" Click="work_Click"/>
+        <Button x:Name="exit" Content="Вихід" HorizontalAlignment="Left" Margin="340,271,0,0" VerticalAlignment="Top" Width="125" Height="40" Click="exit_Click"/>
+        <Button x:Name="rah" Content="Створити рахунок" HorizontalAlignment="Left" Margin="330,41,0,0" VerticalAlignment="Top" Width="145" Height="40" Click="Button_Click"/>
         <ComboBox x:Name="od" HorizontalAlignment="Left" Margin="30,108,0,0" VerticalAlignment="Top" Width="85">
             <System:String>м3</System:String>
             <System:String>м2</System:String>
@@ -32,7 +32,7 @@
         <TextBox x:Name="count" HorizontalAlignment="Left" Height="23" Margin="30,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="add_work" Content="Добавити" HorizontalAlignment="Left" Margin="30,188,0,0" VerticalAlignment="Top" Width="75" Click="add_work_Click"/>
         <Button x:Name="_return_Copy" Content="Повернутись" HorizontalAlignment="Left" Margin="10,326,0,0" VerticalAlignment="Top" Width="75" Click="_return_Copy_Click"/>
-        <FlowDocumentReader x:Name="box" Margin="280,0,0,0">
+        <FlowDocumentReader x:Name="box" Margin="265,0,0,0">
             <FlowDocument>
 
                 <Table x:Name="table" CellSpacing="5">
@@ -47,19 +47,19 @@
                     <TableRowGroup>
                         <TableRow Background="LightGoldenrodYellow">
                             <TableCell>
-                                <Paragraph FontSize="14pt">Вид робіт</Paragraph>
+                                <Paragraph FontSize="14pt" TextAlignment="Left">Вид робіт</Paragraph>
                             </TableCell>
                             <TableCell>
-                                <Paragraph FontSize="14pt">Одиниці виміру</Paragraph>
+                                <Paragraph FontSize="14pt" TextAlignment="Left">Одиниці виміру</Paragraph>
                             </TableCell>
                             <TableCell>
-                                <Paragraph FontSize="14pt">Кількість</Paragraph>
+                                <Paragraph FontSize="14pt" TextAlignment="Left">Кількість</Paragraph>
                             </TableCell>
                             <TableCell>
-                                <Paragraph FontSize="14pt">Ціна за одиницю</Paragraph>
+                                <Paragraph FontSize="14pt" TextAlignment="Left">Ціна за одиницю</Paragraph>
                             </TableCell>
                             <TableCell>
-                                <Paragraph FontSize="14pt">Загальна ціна</Paragraph>
+                                <Paragraph FontSize="14pt" TextAlignment="Left">Загальна ціна</Paragraph>
                             </TableCell>
                         </TableRow>
                     </TableRowGroup>
