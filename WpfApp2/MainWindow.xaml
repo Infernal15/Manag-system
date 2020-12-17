@@ -1,0 +1,70 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="WpfApp2.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="386" Width="813" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="White" VerticalAlignment="Top" Margin="0" Height="356">
+        <Button x:Name="work" Content="Добавити нові роботи" HorizontalAlignment="Left" Margin="360,152,0,0" VerticalAlignment="Top" Width="145" Height="40" Click="work_Click"/>
+        <Button x:Name="exit" Content="Вихід" HorizontalAlignment="Left" Margin="370,282,0,0" VerticalAlignment="Top" Width="125" Height="40" Click="exit_Click"/>
+        <Button x:Name="rah" Content="Створити рахунок" HorizontalAlignment="Left" Margin="360,52,0,0" VerticalAlignment="Top" Width="145" Height="40" Click="Button_Click"/>
+        <ComboBox x:Name="od" HorizontalAlignment="Left" Margin="30,108,0,0" VerticalAlignment="Top" Width="85">
+            <System:String>м3</System:String>
+            <System:String>м2</System:String>
+            <System:String>л</System:String>
+        </ComboBox>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="23" Margin="30,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="price" HorizontalAlignment="Left" Height="23" Margin="30,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lab_name" Content="Назва роботи" HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lab_od" Content="Одиниці виміру" HorizontalAlignment="Left" Margin="30,77,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lab_p" Content="Ціна" HorizontalAlignment="Left" Margin="30,150,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="add" Content="Добавити" HorizontalAlignment="Left" Margin="30,250,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="Button_Click_1"/>
+        <Button x:Name="_return" Content="Повернутись" HorizontalAlignment="Left" Margin="10,326,0,0" VerticalAlignment="Top" Width="75" Click="_return_Click"/>
+        <ComboBox x:Name="zam" HorizontalAlignment="Left" Margin="30,36,0,0" VerticalAlignment="Top" Width="220">
+            <System:String>First</System:String>
+            <System:String>Second</System:String>
+            <System:String>Third</System:String>
+        </ComboBox>
+        <ComboBox x:Name="list" HorizontalAlignment="Left" Margin="30,82,0,0" VerticalAlignment="Top" Width="220"/>
+        <TextBox x:Name="count" HorizontalAlignment="Left" Height="23" Margin="30,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="add_work" Content="Добавити" HorizontalAlignment="Left" Margin="30,188,0,0" VerticalAlignment="Top" Width="75" Click="add_work_Click"/>
+        <Button x:Name="_return_Copy" Content="Повернутись" HorizontalAlignment="Left" Margin="10,326,0,0" VerticalAlignment="Top" Width="75" Click="_return_Copy_Click"/>
+        <FlowDocumentReader x:Name="box" Margin="280,0,0,0">
+            <FlowDocument>
+
+                <Table x:Name="table" CellSpacing="5">
+
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+
+                    <TableRowGroup>
+                        <TableRow Background="LightGoldenrodYellow">
+                            <TableCell>
+                                <Paragraph FontSize="14pt">Вид робіт</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt">Одиниці виміру</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt">Кількість</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt">Ціна за одиницю</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontSize="14pt">Загальна ціна</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentReader>
+    </Grid>
+</Window>
